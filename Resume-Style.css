@@ -1,0 +1,105 @@
+body {
+		background-image: url("Background-image.jpg");
+		background-repeat: no-repeat;
+		background-size:     cover;
+}
+
+.header
+{
+	border: 1px double #666666;
+	background-color: #666666;
+    padding: 20px;
+	color: #f5c26b; /*#37597e*/
+    text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+/* I used box sizing as it allows both divs to be of equal size*/
+* {
+    box-sizing: border-box;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #666666;;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 40px;
+    text-decoration: none;
+	font-family: 'Source Serif Pro', serif;
+	width: 50%;
+	color: #f5c26b;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: grey;
+	color: #f5c26b;
+}	
+
+/* I have created three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+	color: #666666;
+}
+
+/* Left and right column */
+.column.side {			
+    width: 25%;
+	font-family: 'Source Serif Pro', serif;
+}
+
+.column.side img {
+	float: left;
+}
+
+.column.side a {
+	color: #37597e;
+	font: 20px;
+	font-family: 'Source Serif Pro', serif;
+}
+
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+	font-family: 'Source Serif Pro', serif;
+}
+
+.column.middle img{
+	float: left;
+	height: 50px;
+	width: 50px;
+}
+
+
+/* Clear floats after the columns */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul.a {
+    list-style-type: square;
+	font-family: 'Source Serif Pro', serif;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+}
