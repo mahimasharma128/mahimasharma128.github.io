@@ -102,9 +102,16 @@ ul.a {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
     .column.side, .column.middle {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .column.side h1 {
+		width:200%;
+		
     }
 }
 
