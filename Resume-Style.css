@@ -1,9 +1,10 @@
+/*Basic styling for the body of the page*/
 body {
 		background-image: url("Background-image.jpg");
 		background-repeat: no-repeat;
 		background-size:     cover;
 }
-
+/*Styling for the header class in the page*/
 .header
 {
 	border: 1px double #666666;
@@ -18,17 +19,17 @@ body {
 * {
     box-sizing: border-box;
 }
-/* Style the top navigation bar */
+/* Style for the top navigation bar */
 .topnav {
     overflow: hidden;
     background-color: #666666;;
 }
 
-/* Style the topnav links */
+/* Style for the navigation links */
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    /*color: #f2f2f2;*/
     text-align: center;
     padding: 25px 40px;
     text-decoration: none;
@@ -37,13 +38,13 @@ body {
 	color: #f5c26b;
 }
 
-/* Change color on hover */
+/* Change color of nav buttons on hover */
 .topnav a:hover {
     background-color: grey;
 	color: #f5c26b;
 }	
 
-/* I have created three unequal columns that floats next to each other */
+/* I have created three unequal columns that float next to each other */
 .column {
     float: left;
     padding: 10px;
@@ -56,10 +57,14 @@ body {
 	font-family: 'Source Serif Pro', serif;
 }
 
+/*Styling for the images in the side column*/
+/*This one is specifically for stars that I have used in the skills in side class*/
 .column.side img {
 	float: left;
 }
 
+/*Styling for the links in the side column*/
+/*This one is specifically for the Social Media Links in the page*/
 .column.side a {
 	color: #37597e;
 	font: 20px;
@@ -67,19 +72,21 @@ body {
 }
 
 
-/* Middle column */
+/* Stylling for the Middle column */
+/*I want the middle column to be of maximum width*/
 .column.middle {
     width: 50%;
 	font-family: 'Source Serif Pro', serif;
 }
 
+/*Styling for the images in the middle column*/
 .column.middle img{
 	float: left;
 	height: 50px;
 	width: 50px;
 }
 
-
+/*A row class in the page consists of three unequal column classes. Side columns of width 25% each and middle column of width 50%*/
 /* Clear floats after the columns */ 
 .row:after {
     content: "";
@@ -87,6 +94,7 @@ body {
     clear: both;
 }
 
+/*Styling for the lists in the page*/
 ul.a {
     list-style-type: square;
 	font-family: 'Source Serif Pro', serif;
@@ -99,7 +107,12 @@ ul.a {
     }
 }
 
+/*Styling for the Footer in the page*/
 .footer {
-    background-color: #f1f1f1;
+    color: #666666;
     text-align: center;
+	font-size: 18px;
+	font-family: 'Dancing Script', cursive;
 }
+
+

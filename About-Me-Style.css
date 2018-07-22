@@ -1,0 +1,82 @@
+/*Basic styling for the body of the page*/
+body {
+		background-image: url("Background-image.jpg");
+		background-repeat: no-repeat;
+		background-size:     cover;
+}
+
+/*Styling for the header class in the page*/
+.header
+{
+	border: 1px double #666666;
+	background-color: #666666;
+    padding: 20px;
+	color: #f5c26b; /*#37597e*/
+    text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+/* I used box sizing as it allows both divs to be of equal size*/
+* {
+    box-sizing: border-box;
+}
+
+/*Styling for the column class*/
+.column {
+    float: left;
+    padding: 10px;
+	color: #666666;
+}
+
+/*I have created two columns in this page*/
+/*Styling for the left class in the column class*/
+.column.left
+{
+	float: left;
+	width: 50%;
+	font-family: 'Source Serif Pro', serif;
+}
+
+/*Styling for the right class in the column class*/
+.column.right
+{
+	width: 50%;
+	font-family: 'Source Serif Pro', serif;
+}
+
+/*Styling for the h1 tag in the left class of the column class*/
+.column.left h1{
+
+	font-family: 'Dancing Script', cursive;
+	
+}
+
+/*Styling for the h1 tag in the right class of the column class*/
+.column.right h1{
+
+	font-family: 'Dancing Script', cursive;
+}
+
+
+/* Clear floats after the columns */ 
+/*I have created row class and inside it there are two coulmns*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.left, .column.right {
+        width: 100%;
+    }
+}
+
+/*Styling for the Footer in the page*/
+.footer {
+    color: #666666;
+    text-align: center;
+	font-size: 18px;
+	font-family: 'Dancing Script', cursive;
+}

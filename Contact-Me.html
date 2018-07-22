@@ -1,0 +1,69 @@
+<head>
+<title>Contact Me! | Mahima Sharma</title><meta charset="utf-8">
+<link href="https://png.icons8.com/dusk/40/cccccc/flower.png" rel="shortcut icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Contact-Style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+<script>
+function validate()
+    {
+      
+         if( document.contactForm.firstname.value == "" )
+         {
+            alert( "Please provide your firstname!" );
+            document.contactForm.firstname.focus() ;
+            return false;
+         }
+         
+         if( document.contactForm.lastname.value == "" )
+         {
+            alert( "Please provide your lastname!" );
+            document.contactForm.lastname.focus() ;
+            return false;
+         }
+         
+         if( document.contactForm.number.value == "" ||
+         isNaN( document.contactForm.number.value ) ||
+         document.contactForm.number.value.length != 10 )
+         {
+            alert( "Please provide valid phone number." );
+            document.contactForm.number.focus() ;
+            return false;
+         }
+         
+         return( true );
+    }
+	</script>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+  <h1>Hey There! Thank you for dropping by!!</br>Please leave a message :)</h1>
+</div>
+  <div class="row">
+    <div class="column-contact">    
+      <form action="mailto:mahimasharma128@gmail.com" name="contactForm" method="post" enctype="text/plain" onsubmit="return(validate());">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."></br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."></br>
+		<label for="number">Mobile Number</label>
+        <input type="number" id="fname" name="number" placeholder="Your Mobile Number"></br>
+        <label for="subject">Comments</label>
+        <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px"></textarea></br>
+		<input type="submit" value="Send">
+		<input type="reset" value="Reset">
+      </form>
+    </div>
+</div>
+</div>
+</body>
+<!–– Footer class in the page. I have added a inpirational quote that I like––>
+<div class="footer">
+ <p>“I'd rather attempt to do something great and fail than to attempt to do nothing and succeed.”</br></p>
+ </p>―Robert H. Schuller</p>
+</div>
+</body>

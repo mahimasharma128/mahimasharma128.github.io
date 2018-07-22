@@ -1,0 +1,95 @@
+/*Basic styling for the body of the page*/
+body {
+		background-image: url("Background-image.jpg");
+		background-repeat: no-repeat;
+		background-size:     cover;
+}
+
+/*The page contains a container which contains all the page content.*/
+/*Below is the styling for the h1 tag in the header class which in turn belongs to the container class*/
+/*h1 is the heading tag.*/
+.container .header h1 {
+	border: 1px double #666666;
+	background-color: #666666;
+    padding: 20px;
+	color: #f5c26b; /*#37597e*/
+    text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+/*The page contains one column that contains the data.*/ 
+/*Below is the styling for column-contact class in the page*/
+.column-contact {
+	font-family: 'Dancing Script', cursive;
+    padding: 10px;
+	color: #666666;
+	width: 70%;
+	}
+
+
+
+/*Style for the Inputs in the Form */
+/*This is for the text input*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	font-family: 'Source Serif Pro', serif;
+}
+
+/*This style is for the number input*/
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	font-family: 'Source Serif Pro', serif;
+}
+
+/*This style is for the submit button in the form*/
+input[type=submit] {
+    background-color: #666666;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+/*This style is for the submit button when you put the cursor on it*/
+input[type=submit]:hover {
+    background-color: #808080;
+}
+
+/*This style is for the reset button in the form*/
+input[type=reset] {
+    background-color: #666666;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}	
+
+/*This style is for the reset button when you put the cursor on it*/
+input[type=reset]:hover {
+    background-color: #808080;
+}
+
+/* Below piece is for the responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*Styling for the Footer in the page*/
+.footer {
+    color: #666666;
+    text-align: center;
+	font-size: 18px;
+	font-family: 'Dancing Script', cursive;
+}
