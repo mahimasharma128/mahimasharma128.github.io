@@ -61,6 +61,7 @@ body {
 /*This one is specifically for stars that I have used in the skills in side class*/
 .column.side img {
 	float: left;
+	max-width: 50%;
 }
 
 /*Styling for the links in the side column*/
